@@ -1,16 +1,16 @@
 Package: firstlib.david
-Type: Package
-Title: What the Package Does (Title Case)
+Title: Outils d'analyse des trajets vélos à Nantes
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Authors@R: 
+    person("David", "Diop", email = "diopdaouda904@gmail.com", role = c("aut", "cre"))
+Description: Package fournissant des fonctions d'analyse des données 
+    de trajets vélos sur Nantes.
+Depends: R (>= 4.1.0)
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    dplyr,
+    forcats,
+    ggplot2
