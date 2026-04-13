@@ -14,3 +14,4 @@ Imports:
     dplyr,
     forcats,
     ggplot2
+LazyData: true
