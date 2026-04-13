@@ -1,0 +1,25 @@
+---
+title: "Introduction à firstlib.david"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction à firstlib.david}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Filtrer par boucle
+
+```{r}
+library(firstlib.david)
+
+# Filtrer les trajets de la boucle 880
+df_880 <- filtrer_trajet(df_velo, boucle = c("880"))
+head(df_880)
+```
+
+## Visualiser la distribution par jour
+
+```{r}
+# Graphique des trajets par jour de la semaine
+plot_distribution_semaine(df_880)
+```
