@@ -115,3 +115,19 @@ plot_distribution_semaine <- function(trajet) {
     aes(x = jour, y = trajets) +
     geom_col()
 }
+
+
+#' Filtrer les trajets par numéro de boucle
+#'
+#' @param trajet Un data.frame contenant les trajets vélos
+#' @param boucle Un vecteur de numéros de boucle à sélectionner
+#' @return Un data.frame filtré selon les boucles choisies
+#' @export
+#' @importFrom dplyr filter
+filtrer_trajet <- function(trajet, boucle = NULL) {
+  if (is.null(boucle)) {
+    return(trajet)
+  }
+  trajet |>
+    filter(`Numéro de boucle` %in% boucle)
+}
